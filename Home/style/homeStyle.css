@@ -1,0 +1,66 @@
+/* 
+    homeStyle
+    Neil Balaskandarajah
+    Created: 07/02/2019
+    Stylesheet for the homepage of the website
+*/
+
+/* page background */
+.bg {
+    background-color:blue;
+}
+
+/* IMAGES */
+/* Autobot image */
+.img-aut {
+    float: left;
+    clear: left;
+
+    max-width:20%;
+    height:auto;
+    min-width:300px;
+}
+
+/* English image */
+.img-eng {
+    float:right;
+    clear:right;
+
+    max-width:20%;
+    height:auto;
+    min-width:300px;
+}
+
+/* ARROWS */
+/* div for arrows */
+.arrow-box {
+    width:20%; 
+    display: flex;
+    flex-direction: column; /* for vertically stacking the arrows */
+    align-items: center; /* centers the arrows in the div */
+    justify-content:space-around; /* puts space around the arrows */
+    margin-right:3vw;
+    margin-left:3vw;
+}
+
+/* TEXTS */
+/* title text */
+.title {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:5vw;
+    padding:5px;
+    margin:5px;
+    color:red;
+    text-align: center;
+}
+
+/* description text */
+.desc {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:3vw;
+    padding:5px;
+    margin:5px;
+    color:rgb(191,0,0);
+    text-align: center;
+}
+

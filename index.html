@@ -1,0 +1,59 @@
+<!-- 
+    index
+    Neil Balaskandarajah
+    Created: 07/02/2019
+    Homepage for the translator
+-->
+
+<!DOCTYPE HTML>
+<html>
+    <!-- Head -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width:device-width; initial-scale:1.0">
+        <title>Autobot-English Translator</title>
+        <link rel="stylesheet" href="Home/style/homeStyle.css">
+    </head>
+
+    <!-- Body -->
+    <body class="bg">
+        <!-- Images and Arrows -->
+        <header style="display:flex; justify-content: center;">
+            <!-- Autobot image -->
+            <img src="Home/media/Autobots-Logo.png" class="img-aut" alt="Autobot Symbol">
+
+            <!-- Custom SVG arrow elements -->
+            <div class="arrow-box">
+                <!-- to English arrow -->
+                <svg id="to-eng" viewbox="0 0 100 100" preserveAspectRatio="none" width="100%" height="50%">
+                    <a href="EngToAut/engToAut.html">
+                        <polygon points="0,30 0,70 60,70 60,100 100,50 60,0 60,30 0,30"
+                            style="fill:red" />
+                    </a>
+                </svg>
+
+                <!-- to Autobot arrow -->
+                <svg id="to-auto" viewbox="0 0 100 100" preserveAspectRatio="none" width="100%" height="50%">
+                    <a href="AutToEng/autToEng.html">
+                        <polygon points="100,30 100,70 40,70 40,100 0,50 40,0 40,30 100,30"
+                            style="fill:purple" />
+                    </a>
+                </svg>
+            </div>
+
+            <!-- English image -->
+            <img src="Home/media/English.png" class="img-eng" alt="English Language Symbol">    
+        </header>
+
+        <!-- Title and Description -->
+        <div style="padding-top:5vw">
+            <!-- Title -->
+            <h1 class="title">AUTOBOT - ENGLISH <br>TRANSLATOR</h1>
+
+            <!-- Description -->
+            <p class="desc">
+                Click an arrow to translate in from one language or the other
+            </p>
+        </div>
+    </body>
+</html>

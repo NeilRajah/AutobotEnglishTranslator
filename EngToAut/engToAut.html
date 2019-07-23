@@ -12,11 +12,32 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width:device-width; initial-scale:1.0">
         <title>Translate from English to Autobot</title>
-        <link rel="stylesheet" href="EngToAut/style/engToAutStyle.css">
+        <link rel="stylesheet" href="../EngToAut/style/engToAutStyle.css">
     </head>
 
     <!-- Body -->
-    <body>
-        <p>hallo</p>
+    <body class="bg">
+        <!-- Header section with title and description -->
+        <header>
+            <!-- Title -->
+            <h1 class="title">English to Autobot</h1>
+
+            <!-- Instructions -->
+            <p class="desc">
+                Enter the text to be translated on the left.
+                <br>
+                It will be translated on the right side.
+            </p>
+        </header>
+
+        <!-- Mid-section with fields and interactables -->
+        <div>
+            <!-- Input field -->
+            <textarea class="english-field" id="eng-field"></textarea>
+
+            <!-- Output field (placeholder, will not be form) -->
+            <textarea class="autobot-field" id="auto-field"></textarea>
+            <br>
+        </div>
     </body>
 </html>

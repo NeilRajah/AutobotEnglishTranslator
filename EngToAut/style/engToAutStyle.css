@@ -59,3 +59,10 @@
     height:30vw;
     margin:2vw;
 }
+
+/* translation arrow */
+.translate-arrow {
+    float:center;
+    margin:2v;
+    vertical-align: center;
+}

@@ -5,9 +5,26 @@
     Stylesheet for the English to Autobot page
 */
 
+/* colors for the page*/
+:root {
+    --bg-color: blue;
+    --title-color: red;
+    --desc-color: red;
+
+    --arrow-reg: rgb(255,0,0); 
+    --arrow-hov: rgb(205,0,0);
+
+    --clear-reg: rgb(50,50,50);
+    --clear-hov: rgb(35,35,35);
+    --clear-txt: white;
+    --clear-margin: 0.5vw;
+
+    --box-margin: 2vw;
+}
+
 /* page background */
 .bg {
-    background-color:blue;
+    background-color:var(--bg-color);
 }
 
 /* TEXTS */
@@ -17,7 +34,7 @@
     font-size:6vw;
     padding:5px;
     margin:5px;
-    color:red;
+    color:var(--title-color);
     text-align: center;
 }
 
@@ -27,7 +44,7 @@
     font-size:2.5vw;
     padding:5px;
     margin:5px;
-    color:rgb(191,0,0);
+    color:var(--desc-color);
     text-align: center;
 }
 
@@ -43,7 +60,9 @@
     font-size:1.68vw;
     width:40vw;
     height:30vw;
-    margin:2vw;
+    margin-left:var(--box-margin);
+    margin-top:var(--box-margin);
+    margin-right:var(--box-margin);
 }
 
 /* Autobot field */
@@ -57,12 +76,45 @@
     font-size:1.68vw;
     width:40vw;
     height:30vw;
-    margin:2vw;
+    margin-left:var(--box-margin);
+    margin-top:var(--box-margin);
+    margin-right:var(--box-margin);
+}
+
+/* SVG element for arrow */
+#to-auto {
+    margin:auto;
 }
 
 /* translation arrow */
 .translate-arrow {
-    float:center;
-    margin:2v;
-    vertical-align: center;
+    fill:var(--arrow-reg);
+
+    transition: fill 0.1s;
+}
+
+/* .hover is a "Selector" */
+.translate-arrow:hover {
+    fill:var(--arrow-hov);
+    cursor:pointer;
+}
+
+/* Clear button */
+.clear {
+    margin-left:var(--box-margin);
+    margin-top:var(--clear-margin);
+    padding:0.5vw;
+    background-color:var(--clear-reg);
+    color:var(--clear-txt);
+    display:inline-block;
+    font-size:3vw;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 0.5vw;
+
+    transition: background-color 0.1s;
+}
+
+.clear:hover {
+    background-color:var(--clear-hov);
+    cursor:pointer;
 }

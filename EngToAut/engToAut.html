@@ -30,17 +30,21 @@
             </p>
         </header>
 
-        <!-- Mid-section with fields and interactables -->=
-        <!-- Input field -->
-        <textarea class="english-field" id="eng-field"></textarea>
+        <!-- Mid-section with fields and interactables -->
+        <div style="height:auto; display:flex;">
+            <!-- Input field -->
+            <textarea class="english-field" id="eng-field"></textarea>
 
-        <!-- translate arrow -->
-        <svg id="to-auto" viewbox="0 0 100 100" preserveAspectRatio="none" width="10%" height=auto>
-            <polygon points="0,30 0,70 60,70 60,100 100,50 60,0 60,30 0,30"
-                style="fill:purple" />
-        </svg>
+            <!-- translate arrow -->
+            <svg id="to-auto" viewbox="0 0 100 100" width="8%" height="auto">
+                <polygon class="translate-arrow" points="0,30 0,70 60,70 60,100 100,50 60,0 60,30 0,30"/>
+            </svg>
 
-        <!-- Output field (placeholder, will not be form) -->
-        <textarea class="autobot-field" id="auto-field"></textarea>=
+            <!-- Output field (placeholder, will not be form) -->
+            <textarea class="autobot-field" id="auto-field"></textarea>
+        </div>
+
+        <!-- Clear button for input field -->
+        <p class="clear">Clear</p>
     </body>
 </html>

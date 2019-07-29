@@ -5,6 +5,12 @@
     Stylesheet for the homepage of the website
 */
 
+/* global colors */
+:root {
+    --arrow-reg: rgb(191,0,191);
+    --arrow-hov: rgb(161,0,161);
+}
+
 /* page background */
 .bg {
     background-color:blue;
@@ -41,6 +47,16 @@
     justify-content:space-around; /* puts space around the arrows */
     margin-right:3vw;
     margin-left:3vw;
+}
+
+/* styles for both arrows */
+.to-arrow {
+    fill: var(--arrow-reg);
+    transition: fill 0.05s;
+}
+
+.to-arrow:hover {
+    fill: var(--arrow-hov);
 }
 
 /* TEXTS */

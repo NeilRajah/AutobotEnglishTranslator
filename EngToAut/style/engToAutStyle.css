@@ -59,7 +59,7 @@
     font-family:Arial, Helvetica, sans-serif;
     font-size:1.68vw;
     width:40vw;
-    height:30vw;
+    height:20vw;
     margin-left:var(--box-margin);
     margin-top:var(--box-margin);
     margin-right:var(--box-margin);
@@ -75,7 +75,7 @@
     font-family:Arial, Helvetica, sans-serif;
     font-size:1.68vw;
     width:40vw;
-    height:30vw;
+    height:20vw;
     margin-left:var(--box-margin);
     margin-top:var(--box-margin);
     margin-right:var(--box-margin);
@@ -117,4 +117,24 @@
 .clear:hover {
     background-color:var(--clear-hov);
     cursor:pointer;
+}
+
+/* Curtain animation */
+.curtain {
+    background-color:blue;
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    width:100%;
+    animation-name: curtain-change;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes curtain-change {
+    from {height:100%;}
+    to {height:0%;}
 }

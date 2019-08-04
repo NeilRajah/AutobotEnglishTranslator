@@ -4,3 +4,121 @@
     Created: 07/18/2019
     Stylesheet for the Autobot to English page
 */
+
+/* colors for the page*/
+:root {
+    --bg-color: blue;
+    --title-color: red;
+    --desc-color: red;
+
+    --arrow-reg: rgb(255,0,0); 
+    --arrow-hov: rgb(205,0,0);
+
+    --clear-reg: rgb(50,50,50);
+    --clear-hov: rgb(35,35,35);
+    --clear-txt: white;
+    --clear-margin: 0.5vw;
+
+    --box-margin: 2vw;
+}
+
+/* page background */
+.bg {
+    background-color:var(--bg-color);
+}
+
+/* TEXTS */
+/* title text */
+.title {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:6vw;
+    padding:5px;
+    margin:5px;
+    color:var(--title-color);
+    text-align: center;
+}
+
+/* description text */
+.desc {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:2.5vw;
+    padding:5px;
+    margin:5px;
+    color:var(--desc-color);
+    text-align: center;
+}
+
+/* Input fields */
+/* English field */
+.english-field {
+    /* alignment */
+    float:left;
+
+    /* size and font */
+    resize:none;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:1.68vw;
+    width:40vw;
+    height:20vw;
+    margin-left:var(--box-margin);
+    margin-top:var(--box-margin);
+    margin-right:var(--box-margin);
+}
+
+/* SVG element for arrow */
+#to-auto {
+    margin:auto;
+}
+
+/* translation arrow */
+.translate-arrow {
+    fill:var(--arrow-reg);
+
+    transition: fill 0.1s;
+}
+
+/* .hover is a "Selector" */
+.translate-arrow:hover {
+    fill:var(--arrow-hov);
+    cursor:pointer;
+}
+
+/* Clear button */
+.clear {
+    margin-left:var(--box-margin);
+    margin-top:var(--clear-margin);
+    padding:0.5vw;
+    background-color:var(--clear-reg);
+    color:var(--clear-txt);
+    display:inline-block;
+    font-size:3vw;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 0.5vw;
+
+    transition: background-color 0.1s;
+}
+
+.clear:hover {
+    background-color:var(--clear-hov);
+    cursor:pointer;
+}
+
+/* Curtain animation */
+.curtain {
+    background-color:blue;
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    width:100%;
+    animation-name: curtain-change;
+    animation-duration: 0.6s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes curtain-change {
+    from {height:100%;}
+    to {height:0%;}
+}

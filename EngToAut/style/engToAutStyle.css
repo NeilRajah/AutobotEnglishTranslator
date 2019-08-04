@@ -129,7 +129,7 @@
     bottom:0;
     width:100%;
     animation-name: curtain-change;
-    animation-duration: 1s;
+    animation-duration: 0.6s;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
 }

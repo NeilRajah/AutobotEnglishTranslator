@@ -12,11 +12,42 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width:device-width; initial-scale:1.0">
         <title>Translate from Autobot to English</title>
-        <link rel="stylesheet" href="AutToEng/style/autToEngStyle.css">
+        <link rel="stylesheet" href="../AutToEng/style/autToEngStyle.css">
     </head>
 
     <!-- Body -->
-    <body>
-        <p>hallo pt. 2</p>
+    <body class="bg">
+        <!-- Header section with title and description -->
+        <header>
+            <!-- Title -->
+            <h1 class="title">Autobot to English</h1>
+
+            <!-- Instructions -->
+            <p class="desc">
+                Upload the autobot file by pressing the Upload button. It will be displayed in the top box.
+                <br>
+                Click on the arrow to translate the text from Autobot to English.
+            </p>
+        </header>
+
+        <!-- Mid-section with fields and interactables -->
+        <div style="height:auto; display:flex;">
+            <!-- Input field -->
+            <textarea class="english-field" id="eng-field"></textarea>
+
+            <!-- translate arrow -->
+            <svg id="to-auto" viewbox="0 0 100 100" width="8%" height="auto">
+                <polygon class="translate-arrow" points="0,30 0,70 60,70 60,100 100,50 60,0 60,30 0,30"/>
+            </svg>
+
+            <!-- Output field (placeholder, will not be form) -->
+            <textarea class="autobot-field" id="auto-field"></textarea>
+        </div>
+
+        <!-- Clear button for input field -->
+        <p class="clear">Clear</p>
+
+        <!-- div for page transition -->
+        <div class="curtain"></div>
     </body>
 </html>

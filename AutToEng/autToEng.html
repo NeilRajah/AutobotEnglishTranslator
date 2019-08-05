@@ -31,21 +31,25 @@
         </header>
 
         <!-- Mid-section with fields and interactables -->
-        <div style="height:auto; display:flex;">
-            <!-- Input field -->
-            <textarea class="english-field" id="eng-field"></textarea>
+        
+        <!-- Input field (placeholder, will not be final) -->
+        <textarea class="autobot-field" id="eng-field"></textarea>
+        <br>
+
+        <div>
+            <!-- clear button -->
+            <p class="button" id="clear">Clear</p>
 
             <!-- translate arrow -->
-            <svg id="to-auto" viewbox="0 0 100 100" width="8%" height="auto">
+            <svg id="to-eng" viewbox="0 0 100 100" width="8%" height="auto" transform='rotate(90)'>
                 <polygon class="translate-arrow" points="0,30 0,70 60,70 60,100 100,50 60,0 60,30 0,30"/>
             </svg>
 
-            <!-- Output field (placeholder, will not be form) -->
-            <textarea class="autobot-field" id="auto-field"></textarea>
+            <p class="button" id="upload">Upload</p>
         </div>
 
-        <!-- Clear button for input field -->
-        <p class="clear">Clear</p>
+        <!-- Output field -->
+        <textarea class="english-field" id="auto-field"></textarea>
 
         <!-- div for page transition -->
         <div class="curtain"></div>

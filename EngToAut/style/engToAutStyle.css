@@ -22,6 +22,12 @@
     --box-margin: 2vw;
 }
 
+/* Autobot Font */
+@font-face {
+    font-family: Autobot;
+    src: url(Autobot_Characters.TTF);
+}
+
 /* page background */
 .bg {
     background-color:var(--bg-color);
@@ -72,13 +78,16 @@
 
     /* size and font */
     resize:none;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:Autobot;
     font-size:1.68vw;
     width:40vw;
     height:20vw;
     margin-left:var(--box-margin);
     margin-top:var(--box-margin);
-    margin-right:var(--box-margin);
+    margin-right:var(--box-margin); 
+
+    /* make it so users cannot select text */
+    -webkit-user-select: none;
 }
 
 /* SVG element for arrow */

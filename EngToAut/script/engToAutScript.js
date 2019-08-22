@@ -6,11 +6,15 @@
  */
 
 //VARIABLES
-var engField; //English text field
 
+//fields
+var engField; //English text field
 var autoField; //Autobot text field
 
+//clickables
 var translate; //translation arrow
+var clear; //clear button
+var encrypt; //encrypt button
 
 //On Load
 /**
@@ -26,14 +30,16 @@ window.onload = function() {
  * First function to run when the program loads; initializes all variables
  */
 function startUp() {
-    //initialize the english field
+    //initialize the text fields
     engField = document.getElementById('eng-field');
-
-    //initialize the autobot field
     autoField = document.getElementById('auto-field');
 
     //initialize the translation arrow
     translate = document.getElementById('to-auto');
+
+    //initialize the buttons
+    clear = document.getElementById('clear');
+    encrypt = document.getElementById('encrypt');
 } //end startUp
 
 //Event Listeners
@@ -42,16 +48,10 @@ function startUp() {
  */
 function addListeners() {
     translate.addEventListener('click', displayAutobot); //for when arrow is clicked
-    autoField.addEventListener('oncopy', "return false;"); //for when Autobot field is copied
+
+    clear.addEventListener('click', clearFields); //when clear button is clicked
+    encrypt.addEventListener('click', encryptText); //when encrypt button is pressed
 } //end addListeners
-
-//Translation
-/**
- * Translates the English text into code that is written to a file
- */
-function translateText() {
-
-} //end translateText
 
 /**
  * Displays the text from the English text field as Autobot in the Autobot text field
@@ -60,3 +60,18 @@ function displayAutobot() {
     var text = engField.value;
     autoField.value = text;
 } //end displayAutobot
+
+/**
+ * Clears both fields when the clear button is pressed
+ */
+function clearFields() {
+    engField.value = "";
+    autoField.value = "";
+} //end clearFields
+
+/**
+ * Translates the English text into code and writes it to a file
+ */
+function encryptText() {
+
+} //end encryptText

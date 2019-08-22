@@ -108,8 +108,8 @@
     cursor:pointer;
 }
 
-/* Clear button */
-.clear {
+/* Clear and Encrypt button */
+#clear, #encrypt {
     margin-left:var(--box-margin);
     margin-top:var(--clear-margin);
     padding:0.5vw;
@@ -123,7 +123,8 @@
     transition: background-color 0.1s;
 }
 
-.clear:hover {
+/* Clear and Encrypt button hover actions */
+#clear:hover, #encrypt:hover {
     background-color:var(--clear-hov);
     cursor:pointer;
 }

@@ -59,7 +59,7 @@ function addListeners() {
 
   //upload button
   uploadBtn.addEventListener('click', upload);
- 
+
   //file chooser
   fileChooser.addEventListener('change', collectFiles, false);
 } //end addListeners

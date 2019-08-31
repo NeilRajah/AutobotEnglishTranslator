@@ -33,25 +33,28 @@
         <!-- Mid-section with fields and interactables -->
         
         <!-- Input field (placeholder, will not be final) -->
-        <textarea class="autobot-field" id="eng-field"></textarea>
+        <textarea class="autobot-field" id="auto-field" readonly></textarea>
         <br>
 
         <div>
             <!-- clear button -->
-            <p class="button" id="clear">Clear</p>
+            <p class="button" id="upload">Upload</p>
 
             <!-- translate arrow -->
-            <svg id="to-eng" viewbox="0 0 100 100" width="8%" height="auto" transform='rotate(90)'>
+            <svg id="arrow" viewbox="0 0 100 100" width="8%" height="auto" transform='rotate(90)'>
                 <polygon class="translate-arrow" points="0,30 0,70 60,70 60,100 100,50 60,0 60,30 0,30"/>
             </svg>
 
-            <p class="button" id="upload">Upload</p>
+            <p class="button" id="clear">Clear</p>
         </div>
 
         <!-- Output field -->
-        <textarea class="english-field" id="auto-field"></textarea>
+        <textarea class="english-field" id="eng-field"></textarea>
 
         <!-- div for page transition -->
         <div class="curtain"></div>
+
+        <!-- page script -->
+        <script src="script/autToEngScript.js"></script>
     </body>
 </html>

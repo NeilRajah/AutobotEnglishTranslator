@@ -25,7 +25,7 @@
 /* Autobot Font */
 @font-face {
     font-family: Autobot;
-    src: url(Autobot_Characters.TTF);
+    src: url(../../Home/style/ancient-autobot/autobot.ttf);
 }
 
 /* page background */

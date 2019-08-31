@@ -120,7 +120,7 @@ function encryptText(text, multiplier, base) {
     var words = engField.value.split(' '); //split the text in the field by word
     var fileText = ""; //text for the file
     
-    //loop through the file and swap the characters for numbers
+    //loop through the words and swap the characters for numbers
     for (i = 0; i < words.length; i++) {
         var word = ""; //variable for the word
         

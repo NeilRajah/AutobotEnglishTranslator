@@ -7,16 +7,16 @@
 
 /* colors for the page*/
 :root {
-    --bg-color: blue;
-    --title-color: red;
-    --desc-color: red;
+    --bg-color: #2C3531;
+    --title-color: #D9B08C;
+    --desc-color: #c49b78;
 
-    --arrow-reg: rgb(255,0,0); 
-    --arrow-hov: rgb(205,0,0);
+    --arrow-reg:#169294;
+    --arrow-hov:#116466;
 
-    --clear-reg: rgb(50,50,50);
-    --clear-hov: rgb(35,35,35);
-    --clear-txt: white;
+    --clear-reg: #169294;
+    --clear-hov: #116466;
+    --clear-txt: #fdf7f2;
     --clear-margin: 0.5vw;
 
     --box-margin: 2vw;
@@ -68,6 +68,7 @@
     height:10vw;
     margin:auto;
     display:block;
+    border-radius:0.5vw;
 }
 
 /* English field */
@@ -80,6 +81,7 @@
     height:10vw;
     margin:auto;
     display:block;
+    border-radius:0.5vw;
 }
 
 /* SVG element for arrow */
@@ -138,7 +140,7 @@
 
 /* Curtain animation */
 .curtain {
-    background-color:blue;
+    background-color:var(--bg-color);
     position: absolute;
     top:0;
     right:0;

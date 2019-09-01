@@ -7,13 +7,13 @@
 
 /* global colors */
 :root {
-    --arrow-reg: rgb(191,0,191);
-    --arrow-hov: rgb(161,0,161);
+    --arrow-reg:#169294;
+    --arrow-hov:#116466;
 }
 
 /* page background */
 .bg {
-    background-color:blue;
+    background-color: #2C3531;
 }
 
 /* IMAGES */
@@ -66,7 +66,7 @@
     font-size:5vw;
     padding:5px;
     margin:5px;
-    color:red;
+    color:#D9B08C;
     text-align: center;
 }
 
@@ -76,7 +76,7 @@
     font-size:3vw;
     padding:5px;
     margin:5px;
-    color:rgb(191,0,0);
+    color:#c49b78;
     text-align: center;
 }
 

@@ -7,28 +7,50 @@
 
 /* colors for the page*/
 :root {
+    /* colors */
     --bg-color: #2C3531;
     --title-color: #D9B08C;
     --desc-color: #c49b78;
 
+    /* arrow colors */
     --arrow-reg:#169294;
     --arrow-hov:#116466;
 
+    /* clear button */
     --clear-reg: #169294;
     --clear-hov: #116466;
     --clear-txt: #fdf7f2;
     --clear-margin: 0.5vw;
 
+    /* fields */
     --box-margin: 2vw;
+    --field-height: 40%;
 
+    /* buttons */
     --button-margin: 34%;
     --button-offset: -55%;
+
+    /* fonts */
+    --title-font: 6vw;
+    --desc-font: 1.5vw;
+    --field-font: 1.68vw;
 }
 
 /* Autobot Font */
 @font-face {
     font-family: Autobot;
     src: url(../../Home/style/ancient-autobot/autobot.ttf);
+}
+
+/* query for changing styles when on mobile */
+@media screen and (max-width:1440) {
+    /* when size is less than 800px (typical for mobile) */
+    :root {
+        --title-font: 10%;
+        --desc-font: 6%;
+        --field-font: 4%;
+        --field-height: 30%;
+    }
 }
 
 /* page background */
@@ -40,7 +62,7 @@
 /* title text */
 .title {
     font-family:Arial, Helvetica, sans-serif;
-    font-size:6vw;
+    font-size:var(--title-font);
     padding:5px;
     margin:5px;
     color:var(--title-color);
@@ -50,7 +72,7 @@
 /* description text */
 .desc {
     font-family:Arial, Helvetica, sans-serif;
-    font-size:1.5vw;
+    font-size:var(--desc-font);
     padding:5px;
     margin:5px;
     color:var(--desc-color);
@@ -63,9 +85,9 @@
     /* size and font */
     resize:none;
     font-family:Autobot;
-    font-size:1.68vw;
+    font-size:var(--field-font);
     width:75vw;
-    height:10vw;
+    height:var(--field-height);
     margin:auto;
     display:block;
     border-radius:0.5vw;
@@ -76,9 +98,9 @@
     /* size and font */
     resize:none;
     font-family:Arial, Helvetica, sans-serif;
-    font-size:1.68vw;
+    font-size:var(--field-font);
     width:75vw;
-    height:10vw;
+    height:var(--field-height);
     margin:auto;
     display:block;
     border-radius:0.5vw;

@@ -24,7 +24,7 @@
 
     /* fields */
     --box-margin: 2vw;
-    --field-height: 40%;
+    --field-height: 15vw;
 
     /* buttons */
     --button-margin: 34%;
@@ -34,6 +34,7 @@
     --title-font: 6vw;
     --desc-font: 1.5vw;
     --field-font: 1.68vw;
+    --button-font: 3vw;
 }
 
 /* Autobot Font */
@@ -42,14 +43,40 @@
     src: url(../../Home/style/ancient-autobot/autobot.ttf);
 }
 
-/* query for changing styles when on mobile */
-@media screen and (max-width:1440) {
+/* MEDIA QUERIES FOR DIFFERENT USERS */
+
+/* query for changing styles when on a phone */
+@media only screen and (max-width:1080px) {
     /* when size is less than 800px (typical for mobile) */
     :root {
-        --title-font: 10%;
-        --desc-font: 6%;
-        --field-font: 4%;
-        --field-height: 30%;
+        /* title text */
+        --title-font: 10vw;
+        --desc-font: 6vw;
+
+        /* fields */
+        --field-font: 3vw;
+        --field-height: 40vw;
+
+        /* buttons */
+        --button-font: 4vw;
+        
+        --bg-color:rgb(200,0,0); /* dbg */
+    }
+}
+
+/* query for changing styles when on a tablet */
+@media only screen and (min-width:1080px) and (max-width:1440px) {
+    :root {
+
+        --bg-color:#2C3531; /* dbg */
+    }
+}
+
+/* query for computers */
+@media only screen and (min-width: 1921px) {
+    :root {
+
+        --bg-color: #2C3531;
     }
 }
 
@@ -131,7 +158,7 @@
     background-color:var(--clear-reg);
     color:var(--clear-txt);
     display:inline-block;
-    font-size:3vw;
+    font-size:var(--button-font);
     font-family: Arial, Helvetica, sans-serif;
     border-radius: 0.5vw;
     margin:auto;
@@ -149,7 +176,8 @@
     margin-left:var(--box-margin);
     margin-top:var(--box-margin);
     margin-right:var(--button-margin);
-    transform: translate(0%, var(--button-offset));
+    /* transform: translate(0%, var(--button-offset)); */
+    float: right;
 }
 
 /* Upload button */
@@ -157,7 +185,8 @@
     margin-left:var(--button-margin);
     margin-top:var(--box-margin);
     margin-right:var(--box-margin);
-    transform: translate(0%, var(--button-offset));
+    /* transform: translate(0%, var(--button-offset)); */
+    float: left;
 }
 
 /* Curtain animation */

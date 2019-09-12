@@ -15,6 +15,7 @@
     /* arrow colors */
     --arrow-reg:#169294;
     --arrow-hov:#116466;
+    --arrow-width:20%;
 
     /* clear button */
     --clear-reg: #169294;
@@ -25,15 +26,16 @@
     /* fields */
     --box-margin: 2vw;
     --field-height: 15vw;
+    --field-width: 80vw;
 
     /* buttons */
     --button-margin: 34%;
     --button-offset: -55%;
 
     /* fonts */
-    --title-font: 6vw;
-    --desc-font: 1.5vw;
-    --field-font: 1.68vw;
+    --title-font: 10vw;
+    --desc-font: 2.5vw;
+    --field-font: 3vw;
     --button-font: 3vw;
 }
 
@@ -60,14 +62,16 @@
         /* buttons */
         --button-font: 4vw;
         
-        --bg-color:rgb(200,0,0); /* dbg */
+        /* arrow */
+        --arrow-width: 10vw;
+        
+        --bg-color:#2C3531; /* dbg */
     }
 }
 
 /* query for changing styles when on a tablet */
 @media only screen and (min-width:1080px) and (max-width:1440px) {
     :root {
-
         --bg-color:#2C3531; /* dbg */
     }
 }
@@ -75,7 +79,6 @@
 /* query for computers */
 @media only screen and (min-width: 1921px) {
     :root {
-
         --bg-color: #2C3531;
     }
 }
@@ -113,7 +116,7 @@
     resize:none;
     font-family:Autobot;
     font-size:var(--field-font);
-    width:75vw;
+    width:var(--field-width);
     height:var(--field-height);
     margin:auto;
     display:block;
@@ -126,7 +129,7 @@
     resize:none;
     font-family:Arial, Helvetica, sans-serif;
     font-size:var(--field-font);
-    width:75vw;
+    width:var(--field-width);
     height:var(--field-height);
     margin:auto;
     display:block;
@@ -142,8 +145,16 @@
 /* translation arrow */
 .translate-arrow {
     fill:var(--arrow-reg);
+    display:inline-block;
 
     transition: fill 0.1s;
+}
+
+/* Arrow element */
+#arrow {
+    width:var(--arrow-width);
+    height:auto;
+    margin:0px 0px 1vw 0px;
 }
 
 /* :hover is a "Selector" */
@@ -161,7 +172,6 @@
     font-size:var(--button-font);
     font-family: Arial, Helvetica, sans-serif;
     border-radius: 0.5vw;
-    margin:auto;
 
     transition: background-color 0.1s;
 }
@@ -171,13 +181,16 @@
     cursor:pointer;
 }
 
+/* Div for all buttons */
+.buttons {
+    display:flex;
+}
+
 /* Clear button */
 #clear {
     margin-left:var(--box-margin);
     margin-top:var(--box-margin);
     margin-right:var(--button-margin);
-    /* transform: translate(0%, var(--button-offset)); */
-    float: right;
 }
 
 /* Upload button */
@@ -185,8 +198,6 @@
     margin-left:var(--button-margin);
     margin-top:var(--box-margin);
     margin-right:var(--box-margin);
-    /* transform: translate(0%, var(--button-offset)); */
-    float: left;
 }
 
 /* Curtain animation */

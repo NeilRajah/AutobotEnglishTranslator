@@ -15,7 +15,6 @@
     /* arrow colors */
     --arrow-reg:#169294;
     --arrow-hov:#116466;
-    --arrow-width:20%;
 
     /* clear button */
     --clear-reg: #169294;
@@ -25,8 +24,8 @@
 
     /* fields */
     --box-margin: 2vw;
-    --field-height: 15vw;
-    --field-width: 80vw;
+    --field-height: 20vw;
+    --field-width: 40vw;
 
     /* buttons */
     --button-margin: 34%;
@@ -46,42 +45,6 @@
 }
 
 /* MEDIA QUERIES FOR DIFFERENT USERS */
-
-/* query for changing styles when on a phone */
-@media only screen and (max-width:1080px) {
-    /* when size is less than 800px (typical for mobile) */
-    :root {
-        /* title text */
-        --title-font: 10vw;
-        --desc-font: 6vw;
-
-        /* fields */
-        --field-font: 3vw;
-        --field-height: 40vw;
-
-        /* buttons */
-        --button-font: 4vw;
-        
-        /* arrow */
-        --arrow-width: 10vw;
-        
-        --bg-color:#2C3531; /* dbg */
-    }
-}
-
-/* query for changing styles when on a tablet */
-@media only screen and (min-width:1080px) and (max-width:1440px) {
-    :root {
-        --bg-color:#2C3531; /* dbg */
-    }
-}
-
-/* query for computers */
-@media only screen and (min-width: 1921px) {
-    :root {
-        --bg-color: #2C3531;
-    }
-}
 
 /* page background */
 .bg {
@@ -112,55 +75,67 @@
 /* Input fields */
 /* Autobot field */
 .autobot-field {
+    float:right;
+    /* margin:auto; */
+    margin-right: 2vw;
+
     /* size and font */
     resize:none;
     font-family:Autobot;
     font-size:var(--field-font);
     width:var(--field-width);
     height:var(--field-height);
-    margin:auto;
     display:block;
     border-radius:0.5vw;
 }
 
 /* English field */
 .english-field {
+    float:left;
+    /* margin:auto; */
+    margin-left:2vw;
+
     /* size and font */
     resize:none;
     font-family:Arial, Helvetica, sans-serif;
     font-size:var(--field-font);
     width:var(--field-width);
     height:var(--field-height);
-    margin:auto;
     display:block;
     border-radius:0.5vw;
 }
 
 /* SVG element for arrow */
-#to-auto {
-    margin:auto;
+#arrow {
+    width:10%;
+    margin: 5vw 0vw 0vw 2vw;
     display:inline-block;
 }
 
 /* translation arrow */
 .translate-arrow {
     fill:var(--arrow-reg);
-    display:inline-block;
 
     transition: fill 0.1s;
 }
-
-/* Arrow element */
-#arrow {
-    width:var(--arrow-width);
-    height:auto;
-    margin:0px 0px 1vw 0px;
-}
-
 /* :hover is a "Selector" */
 .translate-arrow:hover {
     fill:var(--arrow-hov);
     cursor:pointer;
+}
+
+/* BUTTONS */
+
+/* unordered list */
+ul {
+    list-style-type: none;
+    margin: 0vw 0vw 0vw 0vw;
+    padding: 0vw;
+}
+
+/* list items */
+li {
+    display: inline;
 }
 
 /* Button style */
@@ -183,21 +158,19 @@
 
 /* Div for all buttons */
 .buttons {
-    display:flex;
+    display:inline;
 }
 
 /* Clear button */
 #clear {
     margin-left:var(--box-margin);
     margin-top:var(--box-margin);
-    margin-right:var(--button-margin);
 }
 
 /* Upload button */
 #upload {
-    margin-left:var(--button-margin);
+    margin-left:var(--box-margin);
     margin-top:var(--box-margin);
-    margin-right:var(--box-margin);
 }
 
 /* Curtain animation */

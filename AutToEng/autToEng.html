@@ -30,25 +30,27 @@
         </header>
 
         <!-- Mid-section with fields and interactables -->
-        
-        <!-- Input field -->
-        <textarea class="autobot-field" id="auto-field" readonly></textarea>
-        <br>
-
-        <div class="buttons">
-            <!-- clear button -->
-            <p class="button" id="upload">Upload</p>
+        <div style="display:inline-block">
+            <!-- Input field -->
+            <textarea class="autobot-field" id="auto-field" readonly></textarea>
 
             <!-- translate arrow -->
-            <svg id="arrow" viewbox="0 0 100 100" transform='rotate(90)'>
+            <svg id="arrow" viewbox="0 0 100 100" transform='rotate(180)'>
                 <polygon class="translate-arrow" points="0,30 0,70 60,70 60,100 100,50 60,0 60,30 0,30"/>
             </svg>
 
-            <p class="button" id="clear">Clear</p>
+            <!-- Output field -->
+            <textarea class="english-field" id="eng-field"></textarea>
         </div>
+        
+        <!-- Row of buttons -->
+        <ul>
+            <!-- Upload button -->
+            <li><p class="button" id="upload">Upload</p></li>
 
-        <!-- Output field -->
-        <textarea class="english-field" id="eng-field"></textarea>
+            <!-- Clear button -->
+            <li><p class="button" id="clear">Clear</p></li>
+        </ul>
 
         <!-- div for page transition -->
         <div class="curtain"></div>

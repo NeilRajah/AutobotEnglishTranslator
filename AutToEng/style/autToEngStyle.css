@@ -32,7 +32,7 @@
     --button-offset: -55%;
 
     /* fonts */
-    --title-font: 10vw;
+    --title-font: 9vw;
     --desc-font: 2.5vw;
     --field-font: 3vw;
     --button-font: 3vw;
@@ -75,9 +75,8 @@
 /* Input fields */
 /* Autobot field */
 .autobot-field {
-    float:right;
-    /* margin:auto; */
-    margin-right: 2vw;
+    float:left;
+    margin-left: 2vw;
 
     /* size and font */
     resize:none;
@@ -91,9 +90,9 @@
 
 /* English field */
 .english-field {
-    float:left;
+    float:right;
     /* margin:auto; */
-    margin-left:2vw;
+    margin-right:2vw;
 
     /* size and font */
     resize:none;

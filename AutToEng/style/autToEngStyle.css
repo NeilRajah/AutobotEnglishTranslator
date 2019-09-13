@@ -32,8 +32,8 @@
     --button-offset: -55%;
 
     /* fonts */
-    --title-font: 9vw;
-    --desc-font: 2.5vw;
+    --title-font: 8vw;
+    --desc-font: 2vw;
     --field-font: 3vw;
     --button-font: 3vw;
 }
@@ -43,8 +43,6 @@
     font-family: Autobot;
     src: url(../../Home/style/ancient-autobot/autobot.ttf);
 }
-
-/* MEDIA QUERIES FOR DIFFERENT USERS */
 
 /* page background */
 .bg {
